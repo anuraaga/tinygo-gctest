@@ -1,0 +1,6 @@
+Heap corruption example
+
+```
+tinygo build -opt=2 -scheduler=none -target=wasi -o gctest.wasm .
+go run github.com/tetratelabs/wazero/cmd/wazero@latest run gctest.wasm
+```
